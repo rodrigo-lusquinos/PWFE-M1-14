@@ -1,0 +1,19 @@
+body {
+	background:#D5DBD5;
+	font-family:Arial;
+	font-size:20px;
+}
+header {
+	margin-left: 180px;
+	width: 50%;
+}
+p a {
+	color:white;
+}
+div {
+	background: green;
+	width:80%;
+	margin:10px;
+	padding:30px;
+	border:10px solid #000;
+}
