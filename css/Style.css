@@ -4,16 +4,23 @@ body {
 	font-size:20px;
 }
 header {
-	margin-left: 180px;
-	width: 50%;
+	text-align: center
 }
 p a {
 	color:white;
+	text-decoration: none;
 }
 div {
 	background: green;
 	width:80%;
-	margin:10px;
+	margin:50px;
 	padding:30px;
 	border:10px solid #000;
+}
+p {
+	text-align: left;
+}
+cite {
+	text-decoration: underline;
+	color:#E0E5DB;
 }
