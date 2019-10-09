@@ -1,6 +1,6 @@
 body {
 	background:#D5DBD5;
-	font-family:Arial;
+	font-family:"Arial", "helvetica", "open sans", sans-serif;
 	font-size:20px;
 }
 header {
@@ -19,8 +19,31 @@ div {
 }
 p {
 	text-align: left;
+	margin-top:0px;
+	margin-bottom:0px; 
 }
 cite {
 	text-decoration: underline;
 	color:#E0E5DB;
 }
+/* asi se escribe un comentario en css */
+/*anatomía de las reglas css:
+selector{
+		propiedad: valor;
+		propiedad: valor;
+		propiedad: valor;
+		}
+
+		font-size: por default el tamaño es de 16px
+		color: podes poner el color en ingles
+				sistema exadecimal #D5DBD5
+				RGB: color:rgb(46, 77, 69) o rgba, agrega transparecia (va del 0 al 1)
+
+	intelineado: line-height: utiliza o porcentaje o multiplicador
+	ej. line-height:100% --> utiliza como base de calculo para determinar su capacidad el mismo alto de la tipografia
+	
+	multiplicador
+	ej. line-height:1
+	se basa en la cantidad de px que le diste al texto con font-size(es el alto)
+
+*/
