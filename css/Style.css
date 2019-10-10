@@ -1,19 +1,23 @@
 body {
-	background:#D5DBD5;
+	background-color:#D5DBD5;
 	font-family:"Arial", "helvetica", "open sans", sans-serif;
 	font-size:20px;
+	}
+img {
+	width: 320px;
+	margin:auto;
+	display: block;
 }
-header {
-	text-align: center
-}
-p a {
-	color:white;
-	text-decoration: none;
+h1 {
+	font-family:"verdana", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
 }
 div {
 	background: green;
 	width:80%;
-	margin:50px;
+	margin-right: auto;
+	margin-left: auto;
 	padding:30px;
 	border:10px solid #000;
 }
@@ -21,6 +25,10 @@ p {
 	text-align: left;
 	margin-top:0px;
 	margin-bottom:0px; 
+}
+p a {
+	color:white;
+	text-decoration: none;
 }
 cite {
 	text-decoration: underline;
