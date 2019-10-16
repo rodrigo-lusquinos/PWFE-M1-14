@@ -1,5 +1,5 @@
 body {
-	background-color:#D5DBD5;
+	background-image: url(../img/Avengers_equipo.jpg);
 	font-family:"Arial", "helvetica", "open sans", sans-serif;
 	font-size:20px;
 	}
@@ -12,9 +12,11 @@ h1 {
 	font-family:"verdana", sans-serif;
 	text-transform: uppercase;
 	text-align: center;
+	color:white;
 }
 div {
-	background: green;
+	font-color: red;
+	background: none;
 	width:80%;
 	margin-right: auto;
 	margin-left: auto;
@@ -24,15 +26,24 @@ div {
 p {
 	text-align: left;
 	margin-top:0px;
-	margin-bottom:0px; 
+	margin-bottom:0px;
+	text-decoration-color: white; 
+	color: green;
 }
-p a {
+a {
 	color:white;
-	text-decoration: none;
+	text-decoration-line: none;
+	background:#f000;
 }
 cite {
 	text-decoration: underline;
 	color:#E0E5DB;
+}
+a: link	{
+	color:#df1338;
+}
+p a-hover{
+	background: #000;
 }
 /* asi se escribe un comentario en css */
 /*anatomía de las reglas css:
