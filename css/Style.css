@@ -38,11 +38,11 @@ a:hover {
 	background:black;
 	text-decoration: underline;
 	color:green;
-	padding:2px;
+	padding:1px;
 }
 cite {
 	text-decoration: underline;
-	color:#E0E5DB;
+	color:#000;
 }
 /* asi se escribe un comentario en css */
 /*anatomía de las reglas css:
