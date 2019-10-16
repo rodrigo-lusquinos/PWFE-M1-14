@@ -38,6 +38,7 @@ a:hover {
 	background:black;
 	text-decoration: underline;
 	color:green;
+	padding:2px;
 }
 cite {
 	text-decoration: underline;
