@@ -16,7 +16,7 @@ h1 {
 }
 div {
 	font-color: red;
-	background: none;
+	background: #FFA07A;
 	width:80%;
 	margin-right: auto;
 	margin-left: auto;
@@ -26,24 +26,22 @@ div {
 p {
 	text-align: left;
 	margin-top:0px;
-	margin-bottom:0px;
-	text-decoration-color: white; 
+	margin-bottom:0px; 
 	color: green;
 }
 a {
 	color:white;
 	text-decoration-line: none;
-	background:#f000;
+	background:#df1338;
+}
+a:hover {
+	background:black;
+	text-decoration: underline;
+	color:green;
 }
 cite {
 	text-decoration: underline;
 	color:#E0E5DB;
-}
-a: link	{
-	color:#df1338;
-}
-p a-hover{
-	background: #000;
 }
 /* asi se escribe un comentario en css */
 /*anatomía de las reglas css:
