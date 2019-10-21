@@ -34,6 +34,30 @@ a {
 	text-decoration-line: none;
 	background:#df1338;
 }
+.Antman{
+	color:silver;
+	background:red;
+}
+.hulk{
+	color:#228B22;
+	background:#7CFC00;
+}
+.ironman{
+	color:red;
+	background:gold;
+}
+.thor{
+	color:blue;
+	background:silver;
+}
+.wasp{
+	color:gold;
+	background: black;
+}
+.capitan-america{
+	color:red;
+	background:#00008B;
+}
 a:hover {
 	background:black;
 	text-decoration: underline;
