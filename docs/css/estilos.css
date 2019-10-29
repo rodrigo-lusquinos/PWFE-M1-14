@@ -1,13 +1,14 @@
 :root {
 	font-size: 62.5%;
 }
-*{
+/**{
 	outline: dotted 1px red;
-}
+}*/
 body {
 	font-family: "helvetica", "arial", "open sans", sans-serif;
 	color: #333;
 	margin:0;
+	overflow-x: hidden;
 }
 a {
 	text-decoration: none;
@@ -45,17 +46,33 @@ nav li a{
 	display: block;
 	padding: .5rem;
 }
+img {
+	display: block;
+}
 #noticias-destacadas {
 	width: 100%;
 	margin: auto;
-	overflow: hidden
+	overflow: hidden;
 }
 #noticias-destacadas ul{
 	display: flex;
 	padding: 0;
 	width: 300%;
+	/*tmb puedo utilizar la unidad de medida vw
+	width: 300vw; 
+	alternativa:
+	#noticias-destacadas{
+		width: 300vw;		VW=viewport
+		overflow: auto;
+		position: relative;(relative;absolut;fixed;sticked)
+		se habilitan: left;right;top;bottom;
+		left:;
+	#noticias-destacadas figure {
+		float: left;
+		width: 100vw
+		*/
 
-	animation: cambio 20s infinite;
+	animation: slider 15s infinite alternate;
 }
 #noticias-destacadas li{
 	width: 100%;
@@ -65,18 +82,29 @@ nav li a{
 #noticias-destacadas img{
 	width: 100%
 }
-#noticias-destacadas figcaption{
+#noticias-destacadas h2{
 	font-size: 4.2rem;
 	background: #333;
 	color: white;
+	font-weight: bold;
+	padding: 1.2rem;
 }
-@keyframes cambio {
-	0% {margin-left: 0;}
-	25% {margin-left: 0;}
+@keyframes slider {
+	0% {margin-left: 0%;}
+	30% {margin-left: 0%;}
 
-	30% {margin-left: -100%;}
-	55% {margin-left: -100%;}
+	35% {margin-left: -100%;}
+	60% {margin-left: -100%;}
 
-	60% {margin-left: -200%;}
-	95% {margin-left: -200%}
+	65% {margin-left: -200%;}
+	100% {margin-left: -200%}
+	/*si tengo puesto el float left en el figure
+@keyframes slider {
+	0%{left: 0;}
+	20%{left: 0;}
+	40%{left: -100vw;}
+	60%{left: -100vw;}
+	80%{left: -200vw;}
+	100%{left: -200vw;}
+}
 }
