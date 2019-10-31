@@ -48,6 +48,7 @@ nav li a{
 }
 img {
 	display: block;
+	width:100%;
 }
 #noticias-destacadas {
 	width: 100%;
@@ -89,6 +90,66 @@ img {
 	font-weight: bold;
 	padding: 1.2rem;
 }
+.noticia {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-evenly;/*flex-start ; flex-end , center, space-between , space-around , space-evenly*/
+	align-items: center;/*flex-start ; flex-end ; center ; stretch*/
+	padding: 1rem;
+}
+
+.noticia-img{
+	width: 30%;
+}
+.noticia-txt {
+	width: 60%
+}
+.noticia-txt h3{
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: black;
+}
+.noticia-txt a {
+	color: black;
+	padding: .5rem;
+}
+.noticia-txt p {
+	font-size: 1.6rem;
+	padding: .5rem;
+}
+#tabla-resultados table{
+	margin:auto;
+	width: 50%;
+}
+#tabla-resultados th{
+	background: red;
+	color: white;
+	font-weight: bold;
+}
+#tabla-resultados td{
+	background: #F2FBF8;
+}
+#tabla-resultados td,
+#tabla-resultados th{
+	padding:1rem;
+	font-size: 2rem;
+	vertical-align: middle;
+}
+#tabla-resultados td:nth-of-type(odd){
+font-size: 3rem;
+font-weight: bold;
+text-align: center;
+}
+#tabla-resultados span{
+color:green;
+font-weight: bold;
+}
+
+
+
+
+
+
 @keyframes slider {
 	0% {margin-left: 0%;}
 	30% {margin-left: 0%;}
@@ -108,4 +169,3 @@ img {
 	100%{left: -200vw;}
 }*/
 }
-
