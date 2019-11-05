@@ -144,6 +144,9 @@ text-align: center;
 color:green;
 font-weight: bold;
 }
+#hamburguesa {
+	display: none;
+}
 
 
 
@@ -169,3 +172,44 @@ font-weight: bold;
 	100%{left: -200vw;}
 }*/
 }
+
+/*mediaquery
+@media
+@media print{config de impresoras
+	
+}
+@media tty { cajeros de supermercados
+	
+}
+@media tv {para que se vea en la televisión
+	
+}
+*/
+
+@media screen and (max-width: 480px) {
+	/*inicio de mobile*/
+	#Menu {
+		display: none;
+	}
+	#Logo {
+		font.size: 2rem;
+		padding left: 7rem;
+	}
+	#hamburguesa {
+		display: block;
+		font-size: 2rem;
+		background-color: transparent;
+		border: none;
+		color: #d9d9d9;
+		float: right;
+	}
+	.noticia {
+		flex-direction: column;
+	}
+	.noticia-img, .noticia-txt {
+		width: 100%;
+	}
+	/*fin de mobile*/
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px)
