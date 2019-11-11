@@ -35,14 +35,14 @@ header h1, header a {
 header a{
 	font-size: 1.6rem;
 }
-nav {
+#Menu nav {
 	float: right;
 }
-nav li{
+#Menu li{
 	display: inline-block;
 	margin:.5rem;
 }
-nav li a{
+#Menu li a{
 	display: block;
 	padding: .5rem;
 }
@@ -90,12 +90,13 @@ img {
 	font-weight: bold;
 	padding: 1.2rem;
 }
+/*
 .noticia {
 	display: flex;
 	flex-direction:row;
-	justify-content: space-evenly;/*flex-start ; flex-end , center, space-between , space-around , space-evenly*/
-	align-items: center;/*flex-start ; flex-end ; center ; stretch*/
-	padding: 1rem;
+	justify-content: space-evenly;*//*flex-start ; flex-end , center, space-between , space-around , space-evenly*/
+	/*align-items: center;/*flex-start ; flex-end ; center ; stretch*/
+	/*padding: 1rem;
 }
 
 .noticia-img{
@@ -116,7 +117,7 @@ img {
 .noticia-txt p {
 	font-size: 1.6rem;
 	padding: .5rem;
-}
+}*/
 #tabla-resultados table{
 	margin:auto;
 	width: 50%;
@@ -147,9 +148,21 @@ font-weight: bold;
 #hamburguesa {
 	display: none;
 }
-
-
-
+.noticia-img{
+	padding: .5rem;
+}
+.noticia-txt {
+	color: black;
+	padding: 1rem;  
+}
+.noticia-txt h3{
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: black; 
+}
+.noticia-txt p{
+	font-size: 1.6rem; 
+}
 
 
 
@@ -203,12 +216,11 @@ font-weight: bold;
 		color: #d9d9d9;
 		float: right;
 	}
-	.noticia {
+
+	/*.noticia {
 		flex-direction: column;
-	}
-	.noticia-img, .noticia-txt {
-		width: 100%;
-	}
+	}*/
+	
 	/*fin de mobile*/
 }
 
