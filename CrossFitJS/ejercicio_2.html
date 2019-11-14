@@ -32,17 +32,40 @@
 		<script>
 			/* 1) Seleccionar el h1 y guardarlo en una variable */
 
+			var titulo = document.querySelector("h1")
+
 			/* 2) Modificar el texto interno de esta variable */
 
+			//titulo.innerText = "Hola desde el bloque de \"script\" del documento"
+
 			/* 3) Una vez que funcione, probar poniendo el <script> en el <head> para corroborar que JavaScript se ejecuta secuencialmente! */
+			//Rompe
 
 			// EXTRA: Explicacion de Manipulaciones
 
 			/* 1) Manipulacion de Contenido */
+				//Todos los comandos que me permiten cambiar el contenido de la etiqueta.
+				titulo.innerHTML = "Estoy <em>manipulando</em> el contenido del h1"
+				//titulo.innerText: modifica el texto interno
+				//titulo.innerHTML: permite colocar etiquetas HTML dentro de un texto y las interpreta como etiquetas.
+
 
 			/* 2) Manipulacion de Estructura */
+				//Es la mas completa y a la vez la mas variable. Es lo opuesto a la de contenido
+				//lo que HTML se llama atributo, JS lo llama propiedad
+				//titulo.style.color = "Green"
+				//titulo.style.backgroundColor = "red"
+				//titulo.classList.add: agrega una clase.
+				titulo.classList.add("alerta")
+				titulo.title = "Que copado esto ¿no?"
 
 			/* 3) Manipulacion de Comportamiento */
+
+			//Document object model (DOM) modelo objeto del documento= es un árbol. Es un mapa que se hace del documento html. Cada etiqueta se las llama nodo.
+
+
+
+
 		</script>
 	</body>
 </html>
