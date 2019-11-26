@@ -28,17 +28,44 @@
 		</section>
 
 		<aside>
-			<p>Generar una función <code>calcularIVA</code> que tome el valor del campo y escriba el resultado en el <code>span</code></p>
+			<p>Generar una función <code>c alcularIVA</code> que tome el valor del campo y escriba el resultado en el <code>span</code></p>
 			<p>Ejecutar la función utilizando la consola de desarrollador</p>
 		</aside>
 
 		<script>
-			function calcularIVA(){
-				/* 1) seleccionar el campo numérico y guardarlo en una variable */
+			/* 1) seleccionar el campo numérico y guardarlo en una variable */
 
 				/* 2) obtener el valor del campo */
 
 				/* 3) escribir en el span el valor del campo + IVA */
+			
+			/*var precio = document.getElementById("precio").value
+			//var precio = document.querySelector("input")
+			var precioconiva = document.querySelector("span")
+
+			object.onselect = function calcularIVA(precio, precioconiva){
+				
+				//precioconiva.onselect = precio * 1.21
+				//console.log (precio * 1.21)
+				return precioconiva
+				
+			}
+			
+			//precioconiva.innerHTML = */
+			
+
+			function calcularIVA(){
+				/*var precio = document.getElementById("precio").value
+				var precioConIva = precio * 1.21
+				var span = document.getElementByClassName("total").value
+				span.innerText = "precioConIva"*/
+				var precio = document.getElementById("precio")
+				var valor = precio.value
+				document.querySelector(".total").innerText = " " + precio * 1.21
+				//
+				//var miSpan = document.querySelector(".total")
+
+				//miSpan.innerText = precio*1.21
 			}
 		</script>
 	</body>
