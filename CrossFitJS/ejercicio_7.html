@@ -59,20 +59,57 @@
 
 		<script>
 			/* 1) Seleccionar todas las habitaciones */
+				//A partir del 2015 es recomendado encerrar en un let en lugar de un var. La diferencia está en que var es window, estás guardando en el browser.
+				let habitaciones = document.querySelectorAll (".habitacion")
 
 			/* 2) Seleccionar el select */
 
+				let menu = document.querySelector ("select[name=habitacion")
+
 			/* 3) Asignar la funcion mostrarOpcion al evento correspondiente */
+
+				menu.onchange = mostrarOpcion
 
 			/* 4) Pensar una solucion logica para esconder todas las habitaciones cada vez que sea necesario */
 
-			function mostrarOpcion(){
-				/* 5) Obtener la opción seleccionada */
+				/*habitaciones[0].classList.add("esconder")
+				habitaciones[1].classList.add("esconder")
+				habitaciones[2].classList.add("esconder")*/
+				//es una solución pero no es muy lógica... funciona para pocos elementos pero si son 300 estás jugado
 
-				/* 6) Seleccionar la habitación correspondiente usando un selector dinámico */
+				//necesito algo que automatice
+				//estructura de control interactiva FOR. Tiene tres partes: 
+				//un contador: es una variable que tiene como fundamento contar (contar las vueltas). variable i
+				//una condición: Mecanismo de salida de la secuencia.
+				//una secuencia: Decir de cuanto en cuanto va contando. le dice a la variable i de cuanto en cuanto va contando (i = i + 1) para que sea de uno en uno el shortcut es i++
+					//debugger
+			
+			window.onload = esconderTodo
 
-				/* 7) Asignar la clase correspondiente */
+			function esconderTodo(){
+				for(let i = 0; i < habitaciones.length; i++){
+						
+					habitaciones[i].classList.add("esconder")
+				
+				}
 			}
+
+			function mostrarOpcion(){
+				esconderTodo()//<-- esto es un callback
+				/* 5) Obtener la opción seleccionada */
+				let opcion = menu.value //según lo que elija el usuario 
+				if(opcion == 0) return //cuando el if tiene una sola acción pueden omitirse las llaves y los espacios.
+				
+				//console.log("usted ha elegido la opción: " + opcion)
+				//console.log(`usted ha elegido la opción: " + ${opcion}`)
+				/* 6) Seleccionar la habitación correspondiente usando un selector dinámico */
+				let elegida = document.querySelector (`.habitacion-${opcion}`)
+				//console.log(elegida)
+				/* 7) Asignar la clase correspondiente */
+				elegida.classList.remove("esconder")
+
+			}
+
 		</script>
 	</body>
 </html>
