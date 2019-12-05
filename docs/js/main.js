@@ -27,6 +27,7 @@ let noticia4 = {
 //crearNoticia(noticia4.titulo, noticia4.autor, noticia4.detalle, noticia4.imagen)//Object
 
 //Ambito: Linea de ejecución funcional. Se ejecuta uno a uno solo cuando se ejecuta la función.
+//Funcion nominada function + nombre ()
 function crearNoticia(t, a, d, i){
 
 	//alert ("El título a mostrar es: " + t)
