@@ -22,9 +22,9 @@ let noticia4 = {
 	imagen : "buenos-aires.jpg"
 } 
 
-crearNoticia(titulo, autor, detalle, imagen)//Variables sueltas
-crearNoticia(noticia3[0], noticia3[1], noticia3[2], noticia3[3])//Array
-crearNoticia(noticia4.titulo, noticia4.autor, noticia4.detalle, noticia4.imagen)//Object
+//crearNoticia(titulo, autor, detalle, imagen)//Variables sueltas
+//crearNoticia(noticia3[0], noticia3[1], noticia3[2], noticia3[3])//Array
+//crearNoticia(noticia4.titulo, noticia4.autor, noticia4.detalle, noticia4.imagen)//Object
 
 //Ambito: Linea de ejecución funcional. Se ejecuta uno a uno solo cuando se ejecuta la función.
 function crearNoticia(t, a, d, i){
